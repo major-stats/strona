@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+
+    <link href="css.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <div id="body">
+        <div id='lista'>
+        <nav>
+            <ol>
+                <li><a href=""></a>
+                  <ul>
+                    <li><a href=""></a></li>
+                  </ul>
+                </li>
+            
+                <li><a href=""></a>
+                  <ul>
+                    <li><a href=""></a></li>
+                  </ul>
+                </li>
+            
+                <li><a href=""></a></li>
+            
+                <li><a href=""></a>
+                  <ul>
+                    <li><a href=""></a></li>
+                  </ul>
+                </li>
+              </ol>
+        </nav>
+    </div>
+    <header>
+        <h1>Major Stats</h1>
+    </header>
+     while ($team = mysqli_fetch_row($cd)){ 
+        echo '<div class="team">';
+        
+        echo '<div class="pic">';
+            echo '<img class="picture" src="'.$team[10].'">';
+        echo "</div>";
+        
+        echo '<div class="info">';
+            echo '<p class="nazwa">'.$team[1]."</p>";
+            echo "<p>".$team[2]."</p>";
+            echo "<p>".$team[3]."</p>";
+            echo "<p>".$team[4]."</p>";
+            echo "<p>".$team[5]."</p>";
+            echo "<p>".$team[6]."</p>";
+            echo "<p>".$team[7]."</p>";
+        echo "</div>";
+
+    echo "</div>";
+     }
+    echo "</div>";
+ echo "</body>";
+
+
+
+
+
+
+</body>
+
+</html>
